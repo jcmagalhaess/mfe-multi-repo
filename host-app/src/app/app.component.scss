@@ -1,0 +1,13 @@
+.hostCounterBtn {
+  padding: 10px 20px;
+  border: 1px solid darkblue;
+  color: darkblue;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  &:hover {
+    background-color: darkblue;
+    color: #fff;
+  }
+}

@@ -10,4 +10,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'host-app';
+
+  public handleCounter() {
+    console.log("clicked from host");
+
+  }
 }
