@@ -10,6 +10,12 @@ import { Component } from '@angular/core';
 export class CounterIndexComponent {
   public counter: number = 0;
 
+  constructor() {
+    window.addEventListener('controlMfeCounter', () => {
+      this.handleCounter();
+    })
+  }
+
   public handleCounter() {
     this.counter++
   }

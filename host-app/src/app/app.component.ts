@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'host-app';
 
   public handleCounter() {
-    console.log("clicked from host");
-
+    const customEvent = new Event('controlMfeCounter');
+    window.dispatchEvent(customEvent);
   }
 }
