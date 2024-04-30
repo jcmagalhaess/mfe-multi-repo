@@ -7,6 +7,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  .counterHeader {
+    margin-top: 0;
+  }
+  .hostTextContainer {
+    margin-top: 15px;
+    .hostText {
+      width: 400px;
+      border-radius: 20px;
+      border: none;
+      padding: 10px 30px;
+      font-size: 24px;
+      border-bottom: 2px solid darkblue;
+      color: darkblue;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
   .counterLabel {
     font-size: 28px;
     display: flex;
@@ -23,7 +42,6 @@
     background-color: #fff;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 30px;
     &:hover {
       background-color: darkblue;
       color: #fff;

@@ -9,7 +9,13 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'host-app';
+  public changeMeText: string = 'This is HOST Application';
+
+  constructor() {
+    window.addEventListener('controlHostText', (e: any) => {
+      this.changeMeText = e.detail;
+    })
+  }
 
   public handleCounter() {
     const customEvent = new Event('controlMfeCounter');
